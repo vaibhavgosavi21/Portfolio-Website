@@ -1,4 +1,4 @@
-# Java Developer Portfolio
+# Personal Portfolio Using React Js
 
 A modern, responsive portfolio website for a fresher Java developer built with React featuring dynamic animations and smooth interactions.
 
@@ -63,3 +63,9 @@ npm run build
 "# Portfolio-Website" 
 "# Portfolio-Website" 
 "# Portfolio-Website" 
+<img width="1890" height="866" alt="image" src="https://github.com/user-attachments/assets/3a45e14b-c047-45db-9017-b215a0551a51" />
+<img width="1894" height="758" alt="image" src="https://github.com/user-attachments/assets/9e0c3556-83df-4a3f-8fa0-d006be5cc7d1" />
+<img width="1858" height="781" alt="image" src="https://github.com/user-attachments/assets/0665fce1-aec6-4bd4-95d5-184bf3e6a7a3" />
+<img width="1879" height="816" alt="image" src="https://github.com/user-attachments/assets/54c231e2-1ce9-4ebd-b78b-83e33e741838" />
+<img width="1883" height="828" alt="image" src="https://github.com/user-attachments/assets/779920da-1f9c-44c7-a5fe-ac6475412691" />
+<img width="1864" height="661" alt="image" src="https://github.com/user-attachments/assets/24b2d6bb-659c-4929-910b-59fe9ce4ba9e" />

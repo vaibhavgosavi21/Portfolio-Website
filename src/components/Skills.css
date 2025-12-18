@@ -1,0 +1,119 @@
+.skills {
+  background: #0f0f0f;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #222;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(74, 158, 255, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.skill-card:hover::before {
+  left: 100%;
+}
+
+.skill-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  border-color: #4a9eff;
+  box-shadow: 0 10px 30px rgba(74, 158, 255, 0.3);
+}
+
+.skill-card.hovered {
+  background: #222;
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.skill-logo {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-logo {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.skill-card h3 {
+  margin: 0;
+  color: #4a9eff;
+  font-size: 1.2rem;
+}
+
+.skill-bar {
+  background: #0a0a0a;
+  height: 12px;
+  border-radius: 6px;
+  overflow: visible;
+  position: relative;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4a9eff, #6bb6ff);
+  transition: width 1.5s ease;
+  box-shadow: 0 0 15px rgba(74, 158, 255, 0.6);
+  border-radius: 6px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.skill-card:hover .skill-progress {
+  box-shadow: 0 0 25px rgba(74, 158, 255, 0.8);
+  animation: pulse-glow 1.5s infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 15px rgba(74, 158, 255, 0.6); }
+  50% { box-shadow: 0 0 30px rgba(74, 158, 255, 1); }
+}
+
+.skill-percentage {
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding-right: 8px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

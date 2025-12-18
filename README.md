@@ -1,4 +1,4 @@
-# Java Developer Portfolio Using React Js
+# Personal Portfolio Using React Js
 
 A modern, responsive portfolio website for a fresher Java developer built with React featuring dynamic animations and smooth interactions.
 

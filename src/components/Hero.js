@@ -24,7 +24,10 @@ function Hero() {
         <h1 className="fade-in">Hi, I'm <span>Vaibhav Gosavi</span></h1>
         <h2 className="typing">{text}<span className="cursor">|</span></h2>
         <p className="fade-in-delay">Passionate about building scalable applications and solving real-world problems with Java and modern web technologies.</p>
-        <a href="#contact" className="cta-button fade-in-delay-2">Get In Touch</a>
+        <div className="hero-buttons fade-in-delay-2">
+          <a href="#contact" className="cta-button">Get In Touch</a>
+          <a href="/images/Resume.pdf" target="_blank" rel="noopener noreferrer" className="resume-button">Download Resume</a>
+        </div>
       </div>
     </section>
   );

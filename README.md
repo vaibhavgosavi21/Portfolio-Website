@@ -7,7 +7,7 @@ A modern, responsive portfolio website for a fresher Java developer built with R
 - **Hero Section**: Animated typing effect and fade-in animations
 - **About Me**: Profile photo with description
 - **Skills Showcase**: Interactive skill cards with icons, percentage display, and animated progress bars
-- **Projects Section**: Interactive project cards with hover effects
+- **Projects Section**: Interactive project cards with detailed modals and GitHub links
 - **Certifications**: Certificate cards with links and animations
 - **Contact Section**: Social links with pulse animations
 - **Smooth Scrolling**: Navigation with underline animations
@@ -19,7 +19,7 @@ A modern, responsive portfolio website for a fresher Java developer built with R
 - Typing animation for role title
 - Scroll-triggered fade-in animations
 - Progressive skill bar loading with percentage display
-- Interactive skill icons with bounce and spin animations
+- Interactive skill icons with technology logos and animations
 - Shimmer and glow effects on hover
 - Hover effects with scale and shadow
 - Smooth section transitions
@@ -43,9 +43,9 @@ npm start
 Update the following in the components:
 - **Hero.js**: Change your name, role, and description
 - **About.js**: Update profile photo (public/images/photo.jpg), name, and bio
-- **Skills.js**: Add/modify your skills, proficiency levels, and icons
-- **Projects.js**: Add your actual projects with descriptions and tech stack
-- **Certifications.js**: Add your certifications with issuer, date, and certificate links
+- **Skills.js**: Add/modify your skills, proficiency levels, and technology logos
+- **Projects.js**: Add your actual projects with descriptions, detailed features, and GitHub links
+- **Certifications.js**: Add your certifications with technology logos, issuer, date, and certificate links
 - **Contact.js**: Update your email, LinkedIn, and GitHub links
 
 ## Build for Production

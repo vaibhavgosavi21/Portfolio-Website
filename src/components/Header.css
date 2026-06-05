@@ -2,60 +2,92 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(10, 10, 10, 0.95);
-  backdrop-filter: blur(10px);
   z-index: 1000;
-  border-bottom: 1px solid #222;
+  transition: all 0.4s ease;
+  padding: 8px 0;
 }
 
-nav {
+.header.scrolled {
+  background: rgba(5, 5, 8, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(108, 99, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.nav-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 12px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav h1 {
-  color: #4a9eff;
-  font-size: 1.5rem;
-}
-
-nav ul {
+.nav-links {
   display: flex;
-  gap: 30px;
+  gap: 8px;
   list-style: none;
 }
 
-nav a {
-  color: #e0e0e0;
+.nav-links a {
+  color: var(--text-muted);
   text-decoration: none;
-  transition: all 0.3s;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all var(--transition);
   position: relative;
 }
 
-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
+.nav-links a:hover,
+.nav-links a.nav-active {
+  color: var(--text);
+  background: rgba(108, 99, 255, 0.12);
+}
+
+.nav-links a.nav-active {
+  color: var(--accent2);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.bar {
+  display: block;
+  width: 24px;
   height: 2px;
-  background: #4a9eff;
-  transition: width 0.3s;
-}
-
-nav a:hover {
-  color: #4a9eff;
-}
-
-nav a:hover::after {
-  width: 100%;
+  background: var(--text);
+  border-radius: 2px;
+  transition: all 0.3s;
 }
 
 @media (max-width: 768px) {
-  nav ul {
-    gap: 15px;
+  .hamburger { display: flex; }
+
+  .nav-links {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background: rgba(5, 5, 8, 0.97);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 20px;
+    gap: 4px;
+    transform: translateY(-110%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 1px solid var(--card-border);
   }
+
+  .nav-links.open { transform: translateY(0); }
+  .nav-links a { padding: 14px 20px; font-size: 1rem; border-radius: 10px; }
 }
